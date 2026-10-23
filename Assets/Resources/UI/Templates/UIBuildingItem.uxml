@@ -1,0 +1,24 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="UIBuildingItemsForBuild" src="project://database/Assets/Resources/UI/Templates/UIBuildingItemsForBuild.uxml?fileID=9197481963319205126&amp;guid=15e96d4b4e1f27a459755f1ff2a61686&amp;type=3#UIBuildingItemsForBuild"/>
+    <Style src="project://database/Assets/Resources/UI/defaultStyle.uss?fileID=7433441132597879392&amp;guid=ca4eb34446ea0b84c83e0dc76db9a863&amp;type=3#defaultStyle"/>
+    <engine:VisualElement style="flex-direction: row; width: 100%;">
+        <Bindings>
+            <RegisterPointerDownEventBinding property="_unused_pointer_down_event_" callback="PointerDownEvent"/>
+        </Bindings>
+        <engine:Image style="width: 50px; height: 50px;">
+            <Bindings>
+                <engine:DataBinding property="source" data-source-path="Icon" binding-mode="ToTarget"/>
+            </Bindings>
+        </engine:Image>
+        <engine:Label>
+            <Bindings>
+                <LocalizedProperty property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" data-source-path-for-translate="Name"/>
+            </Bindings>
+        </engine:Label>
+        <engine:ListView style="right: 0;" focusable="false" item-template="UIBuildingItemsForBuild" virtualization-method="DynamicHeight" selection-type="None" binding-source-selection-mode="AutoAssign">
+            <Bindings>
+                <engine:DataBinding property="itemsSource" data-source-path="ItemsForBuild" binding-mode="ToTarget"/>
+            </Bindings>
+        </engine:ListView>
+    </engine:VisualElement>
+</engine:UXML>

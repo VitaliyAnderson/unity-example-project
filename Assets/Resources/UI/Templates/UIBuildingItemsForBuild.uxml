@@ -1,0 +1,15 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/defaultStyle.uss?fileID=7433441132597879392&amp;guid=ca4eb34446ea0b84c83e0dc76db9a863&amp;type=3#defaultStyle"/>
+    <engine:VisualElement style="flex-direction: row;">
+        <engine:Label>
+            <Bindings>
+                <LocalizedProperty property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" data-source-path-for-translate="Name"/>
+            </Bindings>
+        </engine:Label>
+        <engine:Label>
+            <Bindings>
+                <engine:DataBinding property="text" data-source-path="Count" binding-mode="ToTarget"/>
+            </Bindings>
+        </engine:Label>
+    </engine:VisualElement>
+</engine:UXML>

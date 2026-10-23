@@ -1,0 +1,8 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/defaultStyle.uss?fileID=7433441132597879392&amp;guid=ca4eb34446ea0b84c83e0dc76db9a863&amp;type=3#defaultStyle"/>
+    <engine:Label>
+        <Bindings>
+            <engine:DataBinding property="text" data-source-path="Name" binding-mode="ToTarget"/>
+        </Bindings>
+    </engine:Label>
+</engine:UXML>

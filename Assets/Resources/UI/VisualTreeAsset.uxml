@@ -1,0 +1,363 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="UIBuildingItem" src="project://database/Assets/Resources/UI/Templates/UIBuildingItem.uxml?fileID=9197481963319205126&amp;guid=51de4fc4f2d2f014d8d05043a1085289&amp;type=3#UIBuildingItem"/>
+    <engine:Template name="UILocalizationItem" src="project://database/Assets/Resources/UI/Templates/UILocalizationItem.uxml?fileID=9197481963319205126&amp;guid=b5901fd9e4c66bb4aabd2b86c167dec9&amp;type=3#UILocalizationItem"/>
+    <engine:Template name="UISavefileItem" src="project://database/Assets/Resources/UI/Templates/UISavefileItem.uxml?fileID=9197481963319205126&amp;guid=e1a362c88f498a448aa85304ac97113f&amp;type=3#UISavefileItem"/>
+    <Style src="project://database/Assets/Resources/UI/defaultStyle.uss?fileID=7433441132597879392&amp;guid=ca4eb34446ea0b84c83e0dc76db9a863&amp;type=3#defaultStyle"/>
+    <engine:VisualElement name="UIPanelMainMenu" focusable="true" class="UIPanel" style="visibility: hidden;">
+        <Bindings>
+            <RegisterNavigationCancelEventBinding property="_unused_navigation_cancel_event_" callback="NavigationCancelEvent"/>
+        </Bindings>
+        <engine:VisualElement class="UIPanelMainMenu">
+            <engine:Label class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925196087319)"/>
+                    <engine:DataBinding property="enabledSelf" data-source-path="NewGameButtonEnabled" binding-mode="ToTarget"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="NewGameButtonClick"/>
+                </Bindings>
+            </engine:Label>
+            <engine:Label class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925196087310)"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="LoadGameButtonClick"/>
+                </Bindings>
+            </engine:Label>
+            <engine:Label class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925196087316)"/>
+                    <engine:DataBinding property="enabledSelf" data-source-path="SaveGameButtonEnabled" binding-mode="ToTarget"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="SaveGameButtonClick"/>
+                </Bindings>
+            </engine:Label>
+            <engine:Label class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925196087311)"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="LocalizationsButtonClick"/>
+                </Bindings>
+            </engine:Label>
+            <engine:Label class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925196087317)"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="SettingsButtonClick"/>
+                </Bindings>
+            </engine:Label>
+            <engine:Label class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925191892995)"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="ControlsButtonClick"/>
+                </Bindings>
+            </engine:Label>
+            <engine:Label class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925196087314)"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="QuitButtonClick"/>
+                </Bindings>
+            </engine:Label>
+        </engine:VisualElement>
+    </engine:VisualElement>
+    <engine:VisualElement name="UIPanelNewGame" focusable="true" class="UIPanel" style="visibility: hidden;">
+        <Bindings>
+            <RegisterNavigationCancelEventBinding property="_unused_navigation_cancel_event_" callback="NavigationCancelEvent"/>
+        </Bindings>
+        <engine:VisualElement class="UIPanelMainMenu">
+            <engine:Label class="UIPanelMainMenuArea">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925196087319)"/>
+                </Bindings>
+            </engine:Label>
+            <engine:Label class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925196087319)"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="NewGameButtonClick"/>
+                </Bindings>
+            </engine:Label>
+            <engine:Label class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925191892993)"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="BackButtonClick"/>
+                </Bindings>
+            </engine:Label>
+        </engine:VisualElement>
+    </engine:VisualElement>
+    <engine:VisualElement name="UIPanelLoading" focusable="true" class="UIPanel" style="visibility: hidden;">
+        <Bindings>
+            <RegisterNavigationCancelEventBinding property="_unused_navigation_cancel_event_" callback="NavigationCancelEvent"/>
+        </Bindings>
+        <engine:VisualElement class="UIPanelMainMenu">
+            <engine:VisualElement class="UIPanelMainMenuArea">
+                <engine:ListView focusable="false" item-template="UISavefileItem" fixed-item-height="50" binding-source-selection-mode="AutoAssign">
+                    <Bindings>
+                        <engine:DataBinding property="itemsSource" data-source-path="Items" binding-mode="ToTarget"/>
+                        <engine:DataBinding property="selectedIndex" data-source-path="SelectedIndex" binding-mode="TwoWay"/>
+                    </Bindings>
+                </engine:ListView>
+            </engine:VisualElement>
+            <engine:Label enabled="false" class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925196087310)"/>
+                    <engine:DataBinding property="enabledSelf" data-source-path="LoadGameButtonEnabled" binding-mode="ToTarget"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="LoadGameButtonClick"/>
+                </Bindings>
+            </engine:Label>
+            <engine:Label class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925191892993)"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="BackButtonClick"/>
+                </Bindings>
+            </engine:Label>
+        </engine:VisualElement>
+    </engine:VisualElement>
+    <engine:VisualElement name="UIPanelSaving" focusable="true" class="UIPanel" style="visibility: hidden;">
+        <Bindings>
+            <RegisterNavigationCancelEventBinding property="_unused_navigation_cancel_event_" callback="NavigationCancelEvent"/>
+        </Bindings>
+        <engine:VisualElement class="UIPanelMainMenu">
+            <engine:VisualElement class="UIPanelMainMenuArea">
+                <engine:ListView focusable="false" item-template="UISavefileItem" fixed-item-height="50" binding-source-selection-mode="AutoAssign">
+                    <Bindings>
+                        <engine:DataBinding property="itemsSource" data-source-path="Items" binding-mode="ToTarget"/>
+                        <engine:DataBinding property="selectedIndex" data-source-path="SelectedIndex" binding-mode="TwoWay"/>
+                    </Bindings>
+                </engine:ListView>
+            </engine:VisualElement>
+            <engine:Label enabled="false" class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925196087316)"/>
+                    <engine:DataBinding property="enabledSelf" data-source-path="SaveGameButtonEnabled" binding-mode="ToTarget"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="SaveGameButtonClick"/>
+                </Bindings>
+            </engine:Label>
+            <engine:Label class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925191892993)"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="BackButtonClick"/>
+                </Bindings>
+            </engine:Label>
+        </engine:VisualElement>
+    </engine:VisualElement>
+    <engine:VisualElement name="UIPanelLocalizations" focusable="true" class="UIPanel" style="visibility: hidden;">
+        <Bindings>
+            <RegisterNavigationCancelEventBinding property="_unused_navigation_cancel_event_" callback="NavigationCancelEvent"/>
+        </Bindings>
+        <engine:VisualElement class="UIPanelMainMenu">
+            <engine:VisualElement class="UIPanelMainMenuArea">
+                <engine:ListView focusable="false" item-template="UILocalizationItem" fixed-item-height="50" binding-source-selection-mode="AutoAssign">
+                    <Bindings>
+                        <engine:DataBinding property="itemsSource" data-source-path="Items" binding-mode="ToTarget"/>
+                        <engine:DataBinding property="selectedIndex" data-source-path="SelectedIndex" binding-mode="TwoWay"/>
+                    </Bindings>
+                </engine:ListView>
+            </engine:VisualElement>
+            <engine:Label enabled="false" class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925191892992)"/>
+                    <engine:DataBinding property="enabledSelf" data-source-path="ApplyButtonEnabled" binding-mode="ToTarget"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="ApplyButtonClick"/>
+                </Bindings>
+            </engine:Label>
+            <engine:Label class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925191892993)"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="BackButtonClick"/>
+                </Bindings>
+            </engine:Label>
+        </engine:VisualElement>
+    </engine:VisualElement>
+    <engine:VisualElement name="UIPanelSettings" focusable="true" class="UIPanel" style="visibility: hidden;">
+        <Bindings>
+            <RegisterNavigationCancelEventBinding property="_unused_navigation_cancel_event_" callback="NavigationCancelEvent"/>
+        </Bindings>
+        <engine:VisualElement class="UIPanelMainMenu">
+            <engine:ScrollView vertical-scroller-visibility="AlwaysVisible" class="UIPanelMainMenuArea">
+                <engine:VisualElement class="MenuListRow">
+                    <engine:Label class="MenuListCol">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925196087297)"/>
+                        </Bindings>
+                    </engine:Label>
+                    <engine:DropdownField class="MenuListCol">
+                        <Bindings>
+                            <engine:DataBinding property="choices" data-source-path="DisplayResolutionItems" binding-mode="ToTarget"/>
+                            <engine:DataBinding property="value" data-source-path="DisplayResolutionValue" binding-mode="TwoWay"/>
+                        </Bindings>
+                    </engine:DropdownField>
+                </engine:VisualElement>
+                <engine:VisualElement class="MenuListRow">
+                    <engine:Label class="MenuListCol">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925196087296)"/>
+                        </Bindings>
+                    </engine:Label>
+                    <engine:Toggle class="MenuListCol">
+                        <Bindings>
+                            <engine:DataBinding property="value" data-source-path="DisplayFullscreenValue" binding-mode="TwoWay"/>
+                        </Bindings>
+                    </engine:Toggle>
+                </engine:VisualElement>
+            </engine:ScrollView>
+            <engine:Label enabled="false" class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925191892992)"/>
+                    <engine:DataBinding property="enabledSelf" data-source-path="ApplyButtonEnabled" binding-mode="ToTarget"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="ApplyButtonClick"/>
+                </Bindings>
+            </engine:Label>
+            <engine:Label class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925191892993)"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="BackButtonClick"/>
+                </Bindings>
+            </engine:Label>
+        </engine:VisualElement>
+    </engine:VisualElement>
+    <engine:VisualElement name="UIPanelControls" focusable="true" class="UIPanel" style="visibility: hidden;">
+        <Bindings>
+            <RegisterNavigationCancelEventBinding property="_unused_navigation_cancel_event_" callback="NavigationCancelEvent"/>
+        </Bindings>
+        <engine:VisualElement class="UIPanelMainMenu">
+            <engine:ScrollView vertical-scroller-visibility="AlwaysVisible" class="UIPanelMainMenuArea">
+                <engine:VisualElement class="MenuListRow">
+                    <engine:Label class="MenuListCol">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1697375729025024)"/>
+                        </Bindings>
+                    </engine:Label>
+                    <engine:Label class="MenuListCol">
+                        <Bindings>
+                            <engine:DataBinding property="text" data-source-path="InputActionInteractValue" binding-mode="TwoWay"/>
+                            <RegisterClickEventBinding property="_unused_click_event" callback="InputActionInteractChange"/>
+                        </Bindings>
+                    </engine:Label>
+                </engine:VisualElement>
+                <engine:VisualElement class="MenuListRow">
+                    <engine:Label class="MenuListCol">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925196087304)"/>
+                        </Bindings>
+                    </engine:Label>
+                    <engine:Label class="MenuListCol">
+                        <Bindings>
+                            <engine:DataBinding property="text" data-source-path="InputActionJumpValue" binding-mode="TwoWay"/>
+                            <RegisterClickEventBinding property="_unused_click_event" callback="InputActionJumpChange"/>
+                        </Bindings>
+                    </engine:Label>
+                </engine:VisualElement>
+                <engine:VisualElement class="MenuListRow">
+                    <engine:Label class="MenuListCol">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925196087309)"/>
+                        </Bindings>
+                    </engine:Label>
+                    <engine:Label class="MenuListCol">
+                        <Bindings>
+                            <engine:DataBinding property="text" data-source-path="InputActionSprintValue" binding-mode="TwoWay"/>
+                            <RegisterClickEventBinding property="_unused_click_event" callback="InputActionSprintChange"/>
+                        </Bindings>
+                    </engine:Label>
+                </engine:VisualElement>
+                <engine:VisualElement class="MenuListRow">
+                    <engine:Label class="MenuListCol">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925196087298)"/>
+                        </Bindings>
+                    </engine:Label>
+                    <engine:Label class="MenuListCol">
+                        <Bindings>
+                            <engine:DataBinding property="text" data-source-path="InputActionInventoryValue" binding-mode="TwoWay"/>
+                            <RegisterClickEventBinding property="_unused_click_event" callback="InputActionInventoryChange"/>
+                        </Bindings>
+                    </engine:Label>
+                </engine:VisualElement>
+            </engine:ScrollView>
+            <engine:Label enabled="false" class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925191892992)"/>
+                    <engine:DataBinding property="enabledSelf" data-source-path="ApplyButtonEnabled" binding-mode="ToTarget"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="ApplyButtonClick"/>
+                </Bindings>
+            </engine:Label>
+            <engine:Label class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925191892993)"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="BackButtonClick"/>
+                </Bindings>
+            </engine:Label>
+            <engine:Label class="MenuListItemControlsPressKey">
+                <Bindings>
+                    <engine:DataBinding property="visible" data-source-path="PressKeyLabelVisible" binding-mode="ToTarget"/>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925196087313)"/>
+                </Bindings>
+            </engine:Label>
+        </engine:VisualElement>
+    </engine:VisualElement>
+    <engine:VisualElement name="UIPanelQuit" focusable="true" class="UIPanel" style="visibility: hidden;">
+        <Bindings>
+            <RegisterNavigationCancelEventBinding property="_unused_navigation_cancel_event_" callback="NavigationCancelEvent"/>
+        </Bindings>
+        <engine:VisualElement class="UIPanelMainMenu">
+            <engine:Label class="UIPanelMainMenuArea">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925196087315)"/>
+                </Bindings>
+            </engine:Label>
+            <engine:Label class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925196087314)"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="QuitButtonClick"/>
+                </Bindings>
+            </engine:Label>
+            <engine:Label class="UIPanelMainMenuButton">
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:900a3fef4c78d184f9222a7b5a90fb89" entry="Id(1925191892993)"/>
+                    <RegisterClickEventBinding property="_unused_click_event" callback="BackButtonClick"/>
+                </Bindings>
+            </engine:Label>
+        </engine:VisualElement>
+    </engine:VisualElement>
+    <engine:VisualElement name="UIPanelHud" focusable="true" class="UIPanel" style="visibility: hidden;">
+        <Bindings>
+            <RegisterPointerDownEventBinding property="_unused_pointer_down_event_" callback="PointerDownEvent"/>
+            <RegisterPointerUpEventBinding property="_unused_pointer_up_event_" callback="PointerUpEvent"/>
+            <RegisterNavigationCancelEventBinding property="_unused_navigation_cancel_event_" callback="NavigationCancelEvent"/>
+        </Bindings>
+        <engine:Label class="TargetPoint"/>
+        <engine:Label class="ActionInfo">
+            <engine:Label>
+                <Bindings>
+                    <engine:DataBinding property="text" data-source-path="FirstActionText" binding-mode="ToTarget"/>
+                </Bindings>
+            </engine:Label>
+            <engine:Label>
+                <Bindings>
+                    <engine:DataBinding property="text" data-source-path="SecondActionText" binding-mode="ToTarget"/>
+                </Bindings>
+            </engine:Label>
+            <engine:Label>
+                <Bindings>
+                    <engine:DataBinding property="text" data-source-path="SpecialActionText" binding-mode="ToTarget"/>
+                </Bindings>
+            </engine:Label>
+        </engine:Label>
+    </engine:VisualElement>
+    <engine:VisualElement name="UIPanelHudConstruction" focusable="true" class="UIPanel" style="visibility: hidden;">
+        <Bindings>
+            <RegisterPointerDownEventBinding property="_unused_pointer_down_event_" callback="PointerDownEvent"/>
+            <RegisterPointerUpEventBinding property="_unused_pointer_up_event_" callback="PointerUpEvent"/>
+        </Bindings>
+        <engine:Label class="TargetPoint"/>
+    </engine:VisualElement>
+    <engine:VisualElement name="UIPanelInventory" focusable="true" class="UIPanel" style="visibility: hidden;"/>
+    <engine:VisualElement name="UIPanelInventoryExchange" focusable="true" class="UIPanel" style="visibility: hidden;"/>
+    <engine:VisualElement name="UIPanelBuildingSelect" focusable="true" class="UIPanel" style="visibility: hidden;">
+        <Bindings>
+            <RegisterPointerDownEventBinding property="_unused_pointer_down_event_" callback="PointerDownEvent"/>
+            <RegisterPointerUpEventBinding property="_unused_pointer_up_event_" callback="PointerUpEvent"/>
+        </Bindings>
+        <engine:VisualElement class="UIPanelMainMenu">
+            <engine:ListView focusable="false" item-template="UIBuildingItem" virtualization-method="DynamicHeight" selection-type="None" binding-source-selection-mode="AutoAssign">
+                <Bindings>
+                    <engine:DataBinding property="itemsSource" data-source-path="Items" binding-mode="ToTarget"/>
+                </Bindings>
+            </engine:ListView>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

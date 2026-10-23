@@ -1,0 +1,212 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: CommonStringTable Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: CommonStringTable
+  m_TableCollectionNameGuidString: 900a3fef4c78d184f9222a7b5a90fb89
+  m_Entries:
+  - m_Id: 1925191892992
+    m_Key: Apply
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087323
+    m_Key: Axe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925191892993
+    m_Key: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925191892994
+    m_Key: Construction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087326
+    m_Key: Constructor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925191892995
+    m_Key: Controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087328
+    m_Key: Copper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087321
+    m_Key: Destroy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087322
+    m_Key: Destroying
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087296
+    m_Key: DisplayFullscreen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087297
+    m_Key: DisplayResolution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087331
+    m_Key: Gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087325
+    m_Key: Hammer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087298
+    m_Key: Inventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087329
+    m_Key: Iron
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087304
+    m_Key: Jump
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087301
+    m_Key: First Action
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087302
+    m_Key: Second Action
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087310
+    m_Key: Load
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087311
+    m_Key: Localizations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087312
+    m_Key: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087305
+    m_Key: Move Down
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087306
+    m_Key: Move Left
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087307
+    m_Key: Move Right
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087308
+    m_Key: Move Up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087319
+    m_Key: New Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087320
+    m_Key: Open
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087324
+    m_Key: Pick
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087313
+    m_Key: PressKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087314
+    m_Key: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087315
+    m_Key: QuitConfirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087316
+    m_Key: Save
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087332
+    m_Key: Seed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087317
+    m_Key: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087330
+    m_Key: Silver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087309
+    m_Key: Sprint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087318
+    m_Key: Take
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1925196087327
+    m_Key: Wood
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1697375729025024
+    m_Key: Interact
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2589436520239104
+    m_Key: New Save
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2656078847610880
+    m_Key: ActionInfo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5386674785812480
+    m_Key: Empty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5390162190204928
+    m_Key: Storage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5390212165337088
+    m_Key: Growbed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5390215030046720
+    m_Key: Base 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5390217332719616
+    m_Key: Base 3
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 2130894440971895203
+  references:
+    version: 2
+    RefIds:
+    - rid: 2130894440971895203
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1778369069076
