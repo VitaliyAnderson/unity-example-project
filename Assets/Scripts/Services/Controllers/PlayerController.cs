@@ -11,7 +11,5 @@ public class PlayerController : IServiceScoped, IDisposable
     public void Dispose()
     {
         CurrentPlayer.Value = null;
-        CurrentPlayer.Dispose();
-        CurrentPlayer = null;
     }
 }
